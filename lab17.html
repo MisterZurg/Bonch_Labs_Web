@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Clean Blog - Sample Post</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Theme CSS -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+        type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        Menu <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand" href="index.html">Ыыы лабы</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <!--        <li>-->
+        <!--          <a href="about.html">Обо мне</a>-->
+        <!--        </li>-->
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('img/post-bg17-50k.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-heading">
+          <h1>Изучение методики составления испытаний системы защиты информации</h1>
+          <h2 class="subheading">Лабораторная работа 17.</h2>
+          <span class="meta">Опубликовано <a href="#">Denis Zakharov</a> от 16 Декабря 2021</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+        <p>Цель работы: научиться  составлять  комплексную  методику испытаний системы защиты, для выявления недоработок спроектированной системы защиты.</p>
+
+        <h2 class="section-heading">Теоретическая часть</h2>
+        <blockquote>
+          В  соответствии  с  «Доктриной  информационной  безопасности
+          Российской  Федерации»  обеспечение  безопасности  информационных
+          ресурсов  от  несанкционированного  доступа  представляет  собой  одну  из
+          составляющих  национальных  интересов  России  в  информационной  сфере.
+          Это определяет необходимость выполнения специальных действий по оценке
+          соответствия  средств  защиты  информации  от  несанкционированного
+          доступа,  используемых  при  построении  автоматизированных  систем  (АС),
+          требованиям  нормативных  и  иных  документов  по  защите  информации.  В
+          данной  статье  рассматриваются  инструментальные  средства  и  методы,
+          которые  могут  быть  использованы  при  проведении  функционального
+          тестирования  систем  и  комплексов  защиты  по  требованиям  безопасности
+          информации в соответствии с требованиями руководящих документов
+        </blockquote>
+        <p>
+          <b>Понятие и цели управления</b>
+          Как известно, руководящий документ (РД) «Средства вычислительной
+          техники.  Защита  от  несанкционированного  доступа  к  информации.
+          Показатели защищенности от несанкционированного доступа к информации»
+          (Гостехкомиссия  России,  1992)  устанавливает  7  классов  защищенности
+          средств защиты информации (СЗИ) от несанкционированного доступа (НСД)
+          на базе перечня показателей защищенности и совокупности описывающих их
+          требований. Рассмотрим общий порядок проведения испытаний СЗИ от НСД
+          на  соответствие  требованиям  РД,  предъявляемым  к  дискреционному
+          принципу контроля доступа, а также к механизму очистки внешней памяти.
+        <ul>Порядок проведения данной проверки в общем случае выглядит следующим образом
+          <li>Создание тестовых субъектов</li>
+          <li>Настройка правил разграничения доступа субъектов испытываемого СЗИ  от  НСД  к  тестовым  защищаемым  объектам. </li>
+          <li>Тестирование  фактического  наличия  права  rkу  субъекта  Sj по отношению к объекту Oj(тестирование настроек СЗИ от НСД).</li>
+          <li>Сравнение  фактических  правдоступа  с  требуемыми  правами, определенными в матрице доступа.</li>
+        </ul>
+        </p>
+        <p>
+        <blockquote>
+        Службой  безопасности,  совместно  с  отделом  информационных
+        технологий, должна быть разработана политика защиты компьютерной сети
+        средствами  канального  уровня,  определяющая  допустимые  маршруты
+        передачи  кадров  канального  уровня.  Разработанная  политика  должна
+        запрещать  связи  типа  «один-ко-многим»,  не  обоснованные  требованиями
+        информационной  поддержки  деятельности  предприятия.  Политикой  также
+        должны  быть  определены  рабочие  места,  с  которых  разрешено
+        конфигурирование средств коммутации канального уровня.
+      </blockquote>
+        <h2>Сетевой уровень</h2>
+        <blockquote>
+          Решение  проблемы  очевидно  – нужно  использовать  все  адресное
+          пространство  и  не  дать  злоумышленнику  возможности  захватить  адреса
+          неиспользуемых  узлов.  Одним  из  способов  является  применение  службы
+          мониторинга  сети  и  поддержки  виртуальных  узлов  в  резервном  диапазоне
+          адресов.  Данная  служба  постоянно  использует  свободное  адресное
+          пространство  сети,  создавая  собственные  виртуальные  хосты  (новые
+          виртуальные  хосты  создаются  сразу  после  отключения  от  сети  реально
+          функционирующих  доверенных  узлов).  Таким  образом,  служба  подменяет
+          собой  отсутствующие  в  настоящий  момент  рабочие  станции,  серверы,
+          маршрутизаторы и т.д.
+        </blockquote>
+        <h2>Транспортный уровень</h2>
+        <blockquote>
+          Реализация  политики  защиты  средствами  транспортного  уровня
+          осуществляется с помощью межсетевых экранов (firewall). Межсетевой экран
+          – это  специализированное  программное  обеспечение,  реализующее
+          фильтрацию  трафика  в  соответствии  с  правилами  политики  защиты  сети
+          средствами  транспортного  уровня.  Как  правило,  данное  программное
+          обеспечение  функционирует  на  платформе  маршрутизатора,  управляющего
+          информационными потоками узлов различных сетей.
+        </blockquote>
+        <h2>Прикладной уровень</h2>
+        <blockquote>
+          Все  запросы  на  доступ  к  ресурсам  проходят  через  один  или  более
+          списков контроля доступа ACL (Access Control List). ACL является набором
+          правил доступа, которые задают для набора защищаемых ресурсов. Ресурсы
+          с низким риском будут иметь менее строгие правила доступа, в то время как
+          высококритичные  ресурсы  должны  иметь  более  строгие  правила  доступа.
+          ACL, по существу, определяют политику безопасности.
+        </blockquote>
+        <h2 class="section-heading">Контрольные вопросы</h2>
+
+        <p><b>Назовите порядок проведения испытаний системы защиты.</b>
+        <ul>
+          <li>Сбор информации различными методами</li>
+          <li>Ее анализ</li>
+          <li>Выводы о соответствии уровня защиты </li>
+        </ul>
+        </p>
+
+        <p><b>Назовите порядок разработки методики испытаний.</b>
+          На основании порядка проведения конкретных проверок в общем случае строится частная модель проверки для конкретной инфраструктуры предприятия.
+        </p>
+
+        <p><b>Какой нормативный документ устанавливает 7 классов защищенности средств защиты информации?</b>
+          «Средства вычислительной техники. Защита от несанкционированного доступа к информации. Показатели защищенности от несанкционированного доступа к информации» (Гостехкомиссия России, 1992)
+        </p>
+
+        <p><b>Назовите порядок тестирования функций МЭ.</b>
+        <img src="img/17-4_answer.JPG">
+        </p>
+        <p><b>Каким рядом заметных достоинств обладает программный комплекс «Сканер-ВС»?</b>
+          Позволяет проводить большое количество типов проверок в соответствии с требованиями руководящих документов.
+          Достоинства: Полнота инструментария, простота использования, сертификаты соответствия.
+        </p>
+      </div>
+    </div>
+  </div>
+</article>
+
+<hr>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <!--                <ul class="list-inline text-center">-->
+        <!--                    <li>-->
+        <!--                        <a href="#">-->
+        <!--                                <span class="fa-stack fa-lg">-->
+        <!--                                    <i class="fa fa-circle fa-stack-2x"></i>-->
+        <!--                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>-->
+        <!--                                </span>-->
+        <!--                        </a>-->
+        <!--                    </li>-->
+        <!--                    <li>-->
+        <!--                        <a href="#">-->
+        <!--                                <span class="fa-stack fa-lg">-->
+        <!--                                    <i class="fa fa-circle fa-stack-2x"></i>-->
+        <!--                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>-->
+        <!--                                </span>-->
+        <!--                        </a>-->
+        <!--                    </li>-->
+        <!--                    <li>-->
+        <!--                        <a href="#">-->
+        <!--                                <span class="fa-stack fa-lg">-->
+        <!--                                    <i class="fa fa-circle fa-stack-2x"></i>-->
+        <!--                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>-->
+        <!--                                </span>-->
+        <!--                        </a>-->
+        <!--                    </li>-->
+        <!--                </ul>-->
+        <p class="copyright text-muted">Copyright &copy; I hate these people 2021</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- jQuery -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
